@@ -45,9 +45,8 @@ h2 {
 
 .flex-nav ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .nav h1 {
@@ -70,9 +69,17 @@ h2 {
   text-decoration: none;
 }
 
-.head {
+.style-head {
   width: 100%;
   background-color: rgb(231, 231, 231);
+}
+
+.style-head h2 {
+  text-align: center;
+}
+
+.text-about p {
+  margin-bottom: 2.5rem;
 }
 
 .button-head {
@@ -94,8 +101,8 @@ h2 {
   color: rgb(255, 165, 0);
 }
 
-.head h2 {
-  margin: 1.5rem;
+.style-head h2 {
+  padding-top: 2rem;
 }
 
 .head img {
@@ -127,7 +134,7 @@ h2 {
 }
 
 .tec-img img {
-  max-width: 15%;
+  max-width: 10%;
   padding-bottom: 4rem;
 }
 
@@ -212,4 +219,48 @@ footer {
   color: rgb(255, 255, 255);
   font-weight: bold;
   padding: 0.5rem;
+}
+
+@media (min-width: 360px) {
+  .flex-nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 770px) {
+  .flex-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-nav h1 {
+    margin-left: 1rem;
+  }
+
+  .nav li {
+    margin: 0 0.8rem;
+  }
+  .tec-img img {
+    max-width: 6%;
+  }
+
+  .flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .head img {
+    order: 1;
+  }
+
+  .text-about {
+    width: 30%;
+    order: 2;
+  }
 }
