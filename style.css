@@ -264,3 +264,46 @@ footer {
     order: 2;
   }
 }
+
+@media (min-width: 800px) {
+  .container-form {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .content-form {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    justify-content: space-between;
+  }
+
+  .content-form > input {
+    display: inline-block;
+    width: 49%;
+  }
+
+  .container-submit {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-submit input {
+    max-width: 35%;
+  }
+
+  .container-form input[placeholder="Nombre"] {
+    width: 100%;
+  }
+
+  .r-socials {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tec-img {
+    width: 60%;
+    margin: 3rem auto;
+  }
+}
